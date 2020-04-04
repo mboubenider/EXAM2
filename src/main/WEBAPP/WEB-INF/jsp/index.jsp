@@ -28,7 +28,6 @@
 
 <table>
     <tr>
-        <th>ID</th>
         <th>Name</th>
         <th>Description</th>
         <th>Symptoms</th>
@@ -37,13 +36,11 @@
     </tr>
     <c:forEach var = "listitem" items = "${viruslist}">
         <tr>
-            <td>${listitem.getId()}</td>
             <td>${listitem.getName()}</td>
             <td>${listitem.getDescription()}</td>
             <td>${listitem.getSymptoms()}</td>
             <td>${listitem.getDuration()}</td>
             <td>${listitem.getMortalityrate()}</td>
-
         </tr>
     </c:forEach>
 
